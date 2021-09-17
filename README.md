@@ -1,5 +1,5 @@
 # Recording joint positions
-These two files should be enough for you to record the joint positions and start the animation.
+These two files should be enough for you to record the joint positions and start the animation. Don't forget to look at record_states.cpp on lines 12, 13, 14. On line 12 you shall choose number of joints (usually set for 7, won't change probably). On line 13 you choose how many seconds of robot moving you want to record. On line 14 you choose how many records you want to skip before you take the initial one. (Eg. there is written 50 - that means I take the first record, then I wait 50, then take another one. With the frequency 1kHz it means, I will take approximately 20 records a second.)
 1. First of all what you want to do is to connect to Panda robot.
 
         ssh ros@192.168.102.21
