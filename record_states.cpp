@@ -93,7 +93,7 @@ int main(int argc, char** argv) {
     union time_ser{
       uint64_t pos;
       uint8_t array[sizeof(uint64_t)];
-    };  //this union is for times - there are not double, but uint64
+    }time_ser;  //this union is for times - there are not double, but uint64
 
     my_file.open ("times.bin", ios::out | ios::binary);
     for(int j = 0; j < int(count/RECORD); j++){
@@ -112,7 +112,7 @@ int main(int argc, char** argv) {
         }
       }
     }
-    my_file.close()
+    my_file.close();
 
     /*
     my_file.open("velocity.bin", ios::out| ios::binary);
